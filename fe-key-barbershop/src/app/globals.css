@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+@theme inline {
+  --font-sans: var(--font-inter);
+  --font-serif: var(--font-playfair);
+}
+
+body {
+  /* Using a warm beige background similar to the design */
+  background-color: #FAF3F2;
+}
+
+/* Custom background pattern from the image - circular/abstract lines */
+.bg-pattern {
+  background-image:
+    radial-gradient(circle at 10% 10%, rgba(200, 180, 170, 0.05) 0%, transparent 20%),
+    radial-gradient(circle at 90% 90%, rgba(200, 180, 170, 0.05) 0%, transparent 25%),
+    radial-gradient(circle at 50% 50%, rgba(200, 180, 170, 0.02) 0%, transparent 40%);
+}
